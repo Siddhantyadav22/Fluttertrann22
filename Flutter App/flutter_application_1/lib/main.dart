@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+// ignore: duplicate_ignore
+/*import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -112,4 +113,36 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+*/
+// ignore_for_file: prefer_const_constructors
+
+// ignore_for_file: prefer_const_constructors, unnecessary_import
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+        // appBar: AppBar(title: Text("Widget Fundamentals")),
+        body: SafeArea(
+            child: Center(
+      child: Container(
+        color: Color.fromARGB(184, 18, 238, 11),
+        width: 350,
+        height: 350,
+        child: Align(
+            alignment: Alignment.center,
+            // ignore: duplicate_ignore, 
+            child: Text(
+        "Flutter",
+        textDirection: TextDirection.ltr,
+        // ignore: prefer_const_constructors
+        style: TextStyle(fontSize: 24,color: Colors.white),
+        ),
+      ),
+    ))),
+  )));
 }
